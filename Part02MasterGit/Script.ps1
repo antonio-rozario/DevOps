@@ -41,8 +41,8 @@ git config --global init.defaultBranch main #this is very common to use instead 
 #Git Internals
 #WB5
 #Create a repo again
-New-Item gitplay1 -ItemType "directory"
-Set-Location .\gitplay1
+mkdir gitplay1
+cd gitplay1
 git init
 code .\testfile.txt
 
@@ -79,7 +79,7 @@ git cat-file -t <first n of the hash shown for the blob in tree file>
 git cat-file -p <first 5 of the hash shown for the blob in tree file>
 
 #Lets prove a point about it only storing unique content
-Copy-Item .\testfile.txt .\testfile2.txt
+cp .\testfile.txt .\testfile2.txt
 git add .
 #what new object do we have? Nothing.
 git status
