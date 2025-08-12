@@ -29,8 +29,8 @@ git remote show origin
 #Can replace --global with --local to set values for a specific repo if required
 git config --global --list    #care about username and email
 
-git config --global user.name "John Savill"
-git config --global user.email john@savilltech.com
+git config --global user.name "Antonio Rozario"
+git config --global user.email "antonio.rozario@gmail.com"
 
 git config --list --show-origin      #see where coming from :q
 git config --list
@@ -264,7 +264,7 @@ git remote -v
 #It has help about next steps
 
 #Add it as the remote origin. Origin is just a name but common standard
-git remote add origin https://github.com/johnthebrit/gitplay1
+git remote add origin https://github.com/antonio-rozario/DevOps/tree/main
 #git branch -M main      # RENAMES the branch from master to main
 
 git remote -v
